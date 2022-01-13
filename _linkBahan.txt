@@ -1,0 +1,9 @@
+https://getbootstrap.com/
+https://www.figma.com/
+https://squoosh.app/
+https://getwaves.io/
+https://github.com/
+https://git-scm.com/
+https://github.com/jamiewilson/form-to-google-sheets
+https://michalsnik.github.io/aos/
+https://greensock.com/gsap/
