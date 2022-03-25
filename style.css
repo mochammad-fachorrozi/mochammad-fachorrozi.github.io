@@ -26,3 +26,7 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+.card-text a {
+  text-decoration: none;
+}
