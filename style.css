@@ -4,20 +4,23 @@
 
 .jumbotron {
   padding-top: 6rem;
+  padding-bottom: 1rem;
   background-color: #e2edff;
 }
 
 #projects {
   background-color: #e2edff;
+  padding-top: 4rem;
 }
 
-#contact {
+#experience {
   background-color: #e2edff;
+  padding-top: 4rem;
 }
 
-section {
+/* section {
   padding-top: 5rem;
-}
+} */
 
 .gallery-img {
   width: 100%;
@@ -33,6 +36,10 @@ section {
 
 .text-justify {
   text-align: justify;
+}
+
+.display-4m .lead {
+  color: black;
 }
 
 @media screen and (max-width: 992px) {

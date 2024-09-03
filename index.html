@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
@@ -46,9 +47,18 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
+          
+          <!-- Bootstrap 5 switch -->
+          <div class="form-check form-switch justify-content-center">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+            <label class="form-check-label text-white" for="darkModeSwitch">Dark Mode</label>
+          </div>
         </div>
       </div>
     </nav>
@@ -58,19 +68,14 @@
     <section class="jumbotron text-center">
       <img src="img/me.webp" alt="Mochammad Fachorrozi" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Mochammad Fachorrozi</h1>
-      <p class="lead"></p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,0L26.7,48C53.3,96,107,192,160,202.7C213.3,213,267,139,320,117.3C373.3,96,427,128,480,133.3C533.3,139,587,117,640,117.3C693.3,117,747,139,800,133.3C853.3,128,907,96,960,96C1013.3,96,1067,128,1120,160C1173.3,192,1227,224,1280,208C1333.3,192,1387,128,1413,96L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
+      <p class="lead m-0"></p>
+      
     </section>
     <!-- Akhir Jumbotron -->
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="pt-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,90.7C384,75,480,53,576,74.7C672,96,768,160,864,176C960,192,1056,160,1152,138.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -79,95 +84,96 @@
         </div>
         <div class="row justify-content-center fs-5 text-start">
           <div class="col-md-5 mb-4" data-aos="fade-right">
-            <p class="text-justify mb-4">Nama saya Mochammad Fachorrozi, biasa dipanggil rozi atau oji. Saya tipikal orang yang mudah bergaul dan mudah beradaptasi di lingkungan baru. Serta  senang mempelajari hal-hal terbaru tentang dunia pemrograman, khususnya pemrograman web.</p>
+            <p class="text-justify mb-4">Hai semua 👋 saya Rozi, seorang Web Developer dengan pengalaman dalam mengembangkan dan memelihara aplikasi web yang responsif dan ramah pengguna. Serta saya  juga sangat bersemangat untuk terus belajar dan meningkatkan keterampilan saya di bidang teknologi informasi.</p>
 
-            <div class="overflow-hidden mb-3">
-              <h6>HTML, CSS, Javascript, Jquery</h6>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            
+
+            <div class="card mb-3 shadow" style="max-width: 540px;">
+              <div class="row g-0 border-0 justify-content-center text-center">
+                <div class="col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <span class="mx-4">Follow Me 👉</span> 
+                      <span class="mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                      </span>
+                      <span class="mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                      </span>
+                      <span class="mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                      </span>
+                      <span class="mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                      </span>
+                    </h5>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="overflow-hidden mb-3">
-              <h6>Framework CSS (Bootstrap and TailwindCSS)</h6>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">80%</div>
-              </div>
-            </div>
-            <div class="overflow-hidden mb-3">
-              <h6>PHP and Framework (Laravel and CodeIgniter 3)</h6>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">80%</div>
-              </div>
-            </div>
-            <div class="overflow-hidden mb-3">
-              <h6>Database (MySQL)</h6>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">80%</div>
+
+            <div class="row mb-3 justify-content-center text-center">
+              <div class="col-md-6">
+                <a class="btn btn-primary" src="/file/rozi.pdf" download>Download My CV <i class="bi bi-file-earmark-arrow-down"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-5 mb-4" data-aos="fade-left">
-            <h4>Jenjang Pendidikan</h4>
+            <h4>Education</h4>
+            <div class="ms-3">
+
+              <ol class="list-group ">
+                <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                  <div class="ms-2 me-auto">
+                    <div class="fs-5">Universitas Cenderawasih</div>
+                    <p class="fs-6"> Sistem Informasi</p>
+                  </div>
+                  <span class="badge bg-primary rounded-pill">2017 - 2021</span>
+                </li>
+              </ol>
+            </div>
             
-            <ol class="list-group ">
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fs-5">Universitas Cenderawasih</div>
-                  <p class="fs-6"> Sistem Informasi</p>
-                </div>
-                <span class="badge bg-primary rounded-pill">2017 - 2021</span>
-              </li>
-            </ol>
-            
-            <h4>Pengalaman Bekerja</h4>
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <h5 class="m-0"> CMI Hospital</h5>
-                  <h6 class="m-0 fw-light">Web Programmer</h6>
-                </div>
-                <span class="badge bg-primary rounded-pill">Mei 22 - Jun 23</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <h5 class="m-0">Magang "Lindungi Hutan"</h5>
-                  <h6 class="m-0 fw-light">Laravel Programmer</h6>
-                </div>
-                <span class="badge bg-primary rounded-pill">Agus - Okt 2022</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <h5 class="m-0">CV. Sumber Info Media</h5>
-                  <h6 class="m-0 fw-light">Front-End Developer</h6>
-                </div>
-                <span class="badge bg-primary rounded-pill">Feb - Mar 2023</span>
-              </li>
-            </ol>
+            <h4>Skills</h4>
+            <div class="row">
+              <ul class="ms-4 ps-4">
+                <li class="fs-6">HTML + CSS + Javascript</li>
+                <li class="fs-6">PHP</li>
+                <li class="fs-6">PHP Framework (Laravel & Codeigniter)</li>
+                <li class="fs-6">Javascript Framework (Vue.Js)</li>
+                <li class="fs-6">Database (Mysql)</li>
+                <li class="fs-6">Git + Github</li>
+                <li class="fs-6">SEO Optimalize</li>
+                <li class="fs-6">Deploy (vps & shared hosting)</li>
+              </ul>                
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,32L26.7,58.7C53.3,85,107,139,160,181.3C213.3,224,267,256,320,245.3C373.3,235,427,181,480,181.3C533.3,181,587,235,640,240C693.3,245,747,203,800,154.7C853.3,107,907,53,960,74.7C1013.3,96,1067,192,1120,208C1173.3,224,1227,160,1280,144C1333.3,128,1387,160,1413,176L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,181.3C384,171,480,117,576,106.7C672,96,768,128,864,160C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir About -->
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>My Projects</h2>
+            <h2 class="text-dark">My Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="600" data-aos-duration="500">
-              <img src="img/projects/6.webp" class="card-img-top" alt="Project 4" />
+              <img src="img/projects/6.webp" class="card-img-top" height="180" alt="Project 4" />
               <div class="card-body">
                 <h5 class="card-title">CMI Hospital</h5>
                 <p class="card-text">Website Company Profile </p>
@@ -176,8 +182,48 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="500">
+              <img src="img/projects/pm.png" class="card-img-top" height="180" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">CBT Online</h5>
+                <p class="card-text">Website Computer Based Test </p>
+                <a href="#" target="_blank" class="btn btn-primary">Kunjungi Halaman</a> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-duration="500">
+              <img src="img/projects/rekammedis.png" class="card-img-top" height="180" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Rekam Medis</h5>
+                <p class="card-text">Aplikasi Rekam Medis</p>
+                <a href="#" class="btn btn-primary" target="_blank">Kunjungi website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="800" data-aos-duration="500">
+              <img src="img/projects/karenadoa.png" class="card-img-top" height="180" alt="Project 5" />
+              <div class="card-body">
+                <h5 class="card-title">Panti Asuhan Karena Doa</h5>
+                <p class="card-text">Website Company Profile </p>
+                <a href="https://pantiasuhankarenadoa.com/" class="btn btn-primary" target="_blank">Kunjungi website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card shadow-sm" data-aos="flip-left" data-aos-duration="500">
+              <img src="img/projects/undangan.png" class="card-img-top" height="180" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">Undangan Pernikahan</h5>
+                <p class="card-text">Website Undangan Pernikahan </p>
+                <a href="https://anggaulin-wedding.vercel.app/" class="btn btn-primary" target="_blank">Kunjungi website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
             <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="600" data-aos-duration="500">
-              <img src="img/projects/1.webp" class="card-img-top" alt="Project 4" />
+              <img src="img/projects/1.webp" class="card-img-top" height="180" alt="Project 4" />
               <div class="card-body">
                 <h5 class="card-title">Navigasi</h5>
                 <p class="card-text">Website Company Profile </p>
@@ -185,62 +231,29 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="800" data-aos-duration="500">
-              <img src="img/projects/2.webp" class="card-img-top" alt="Project 5" />
-              <div class="card-body">
-                <h5 class="card-title">Rumah Sakit Ginjal</h5>
-                <p class="card-text">Website Company Profile </p>
-                <a href="http://rumahsakitginjal.com/" class="btn btn-primary" target="_blank">Kunjungi website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm" data-aos="flip-left" data-aos-duration="500">
-              <img src="img/projects/3.webp" class="card-img-top" alt="Project 1" />
-              <div class="card-body">
-                <h5 class="card-title">Obat Kanker</h5>
-                <p class="card-text">Website Company Profile </p>
-                <a href="https://obatkanker.id/" class="btn btn-primary" target="_blank">Kunjungi website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-duration="500">
-              <img src="img/projects/4.webp" class="card-img-top" alt="Project 2" />
-              <div class="card-body">
-                <h5 class="card-title">Obat Diabetes</h5>
-                <p class="card-text">Website Company Profile </p>
-                <a href="https://obatdiabetes.id/" class="btn btn-primary" target="_blank">Kunjungi website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="500">
-              <img src="img/projects/5.webp" class="card-img-top" alt="Project 3" />
-              <div class="card-body">
-                <h5 class="card-title">Eteke Mak Sri</h5>
-                <p class="card-text">Website Company Profile </p>
-                <a href="https://mochammad-fachorrozi.github.io/eteke-makSri/" target="_blank" class="btn btn-primary">Kunjungi Halaman</a> 
-              </div>
-            </div>
-          </div>
+          
           
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
           fill-opacity="1"
           d="M0,160L26.7,176C53.3,192,107,224,160,213.3C213.3,203,267,149,320,112C373.3,75,427,53,480,53.3C533.3,53,587,75,640,117.3C693.3,160,747,224,800,218.7C853.3,213,907,139,960,128C1013.3,117,1067,171,1120,170.7C1173.3,171,1227,117,1280,117.3C1333.3,117,1387,171,1413,197.3L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
         ></path>
-      </svg>
+      </svg> -->
     </section>
     <!-- Akhir Projects -->
 
     
     <!-- Gallery -->
     <section id="gallery">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e2edff" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,85.3C384,75,480,117,576,138.7C672,160,768,160,864,176C960,192,1056,224,1152,202.7C1248,181,1344,107,1392,69.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+        
         <div class="container">
             <div class="row text-center mb-3">
                 <div class="col">
@@ -269,7 +282,7 @@
                         <img src="img/gallery/thumbnail/(4).jpg" alt="Gambar 4" class="img-fluid gallery-img" />
                     </a>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <a href="#">
                         <img src="img/gallery/thumbnail/(5).jpg" alt="Gambar 5" class="img-fluid gallery-img" />
                     </a>
@@ -278,7 +291,7 @@
                     <a href="#">
                         <img src="img/gallery/thumbnail/(6).jpg" alt="Gambar 6" class="img-fluid gallery-img" />
                     </a>
-                </div>
+                </div> -->
                 <div class="col-md-3">
                     <a href="#">
                         <img src="img/gallery/thumbnail/(7).jpg" alt="Gambar 7" class="img-fluid gallery-img" />
@@ -311,9 +324,82 @@
     </section>
     <!-- Akhir Gallery -->
 
+    
+    <!-- Experience -->
+    <section id="experience">
+        
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2 class="text-dark">Experience</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    PT. Perwira Muda Makmur (📅 Februari 4024 - April 2024)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fullstack Developer </h5>
+                    <p style="font-size: 12px;">📍 WFH, based office di Yogyakarta</p>
+                    <ol>
+                      <li>Membuat website Computer Based Test dengan tech stack laravel, mysql, bootstrap
+                        dan vue</li>
+                        <li>Pemeliharaan website dan pembaruan fitur</li>
+                        <li>Konfigurasi penerapan pada vps</li>
+                        <li>Maintenance website</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    PT. Indodev Niaga Internet (📅 Juli 2023 - Januari 2024)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Software Maintenance </h5>
+                    <p style="font-size: 12px;">📍 Tangerang Selatan</p>
+                    <ol>
+                      <li>Membantu klien jika ada pertanyaan seputar sistem HRIS</li>
+                      <li>Memperbaiki error pada sistem</li>
+                      <li>Melakukan kustom pada sistem jika ada yang menginginkan menu tambahan</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    CMI Hospital (📅 Mei 2022 - April 2023)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Web Developer </h5>
+                    <p style="font-size: 12px;">📍 Bandung, Jawa Barat</p>
+                    <ol>
+                      <li>Membuat blog website (kesehatan) dengan teknologi Laravel, MySQL, Bootstrap</li>
+                      <li>Optimasi SEO (Search Engine Optimation)</li>
+                      <li>Konfigurasi shared hosting</li>
+                      <li>Maintenance website</li>
+                    </ol>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#ffffff"
+              fill-opacity="1"
+              d="M0,192L26.7,181.3C53.3,171,107,149,160,165.3C213.3,181,267,235,320,224C373.3,213,427,139,480,133.3C533.3,128,587,192,640,234.7C693.3,277,747,299,800,288C853.3,277,907,235,960,213.3C1013.3,192,1067,192,1120,208C1173.3,224,1227,256,1280,266.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+            ></path>
+          </svg> -->
+    </section>
+    <!-- Akhir Experience -->
+
+
 
     <!-- Contact -->
     <section id="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,181.3C672,192,768,160,864,133.3C960,107,1056,85,1152,96C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -350,21 +436,19 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#0d6efd" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-          </path>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,288C384,288,480,256,576,234.7C672,213,768,203,864,208C960,213,1056,235,1152,218.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- AKhir Contact -->
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-3">
-      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/fachorrozi_/" class="text-white fw-bold">Mochammad Fachorrozi</a></p>
+      <p>©️ 2021. All rights reserved.</p>
     </footer>
     <!-- Akhir Footer -->
 
   <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -374,6 +458,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     
     <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+    const htmlElement = document.documentElement;
+    const switchElement = document.getElementById('darkModeSwitch');
+
+    // Set the default theme to dark if no setting is found in local storage
+    const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+    htmlElement.setAttribute('data-bs-theme', currentTheme);
+    switchElement.checked = currentTheme === 'dark';
+
+    switchElement.addEventListener('change', function () {
+        if (this.checked) {
+            htmlElement.setAttribute('data-bs-theme', 'dark');
+            localStorage.setItem('bsTheme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-bs-theme', 'light');
+            localStorage.setItem('bsTheme', 'light');
+        }
+    });
+});
+    </script>
         
   </body>
 </html>
